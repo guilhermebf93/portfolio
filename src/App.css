@@ -1,0 +1,26 @@
+body {
+  --bg-color: #DDDDDD;
+  --letter-color: #06113C;
+  --border-color: #FF8C32;
+  background-color: var(--bg-color);
+  color: var(--letter-color);
+}
+
+body.dark {
+  --bg-color: #06113C;
+  --letter-color: #DDDDDD
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #06113C;
+    --letter-color: #DDDDDD
+  }
+}*/

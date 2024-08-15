@@ -1,0 +1,103 @@
+.hero {
+  margin: 10vh 0 0;
+  width: 100%;
+  height: 90vh;
+  padding: 1em;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.welcome > h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.picture {
+  width: 50%;
+  max-width: 20em;
+  border-radius: 30%;
+  margin: 1em 0;
+  border: 2px solid var(--border-color);
+}
+
+.heroContent > p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.socialLinks > h2, .relSkills > h2 {
+  text-align: center;
+}
+
+.links, .skills {
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  border-top: 3px solid var(--border-color);
+  color: var(--letter-color);
+}
+
+.links > a {
+  transition: all .3s ease-in;
+  color: var(--letter-color);
+}
+
+.links > a:hover {
+  transform: scale(1.1);
+}
+
+.skills {
+  padding-top: .12em;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+  }
+
+  .welcome {
+    width: 50%;
+  }
+
+  .welcome > h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+  }
+
+  .picture {
+    width: 70%;
+  }
+
+  .heroContent {
+    width: 50%;
+  }
+
+  .heroContent > p {
+    margin-bottom: 2em;
+    font-size: 1.7em;
+  }
+
+  .socialLinks > h2, .relSkills > h2 {
+    font-size: 2.5em;
+  }
+
+  .links, .skills {
+    font-size: 4em;
+  }
+
+  .relSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
