@@ -12,7 +12,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ language }) => {
 
   const pt = [
-    'Bem vindo',
+    'Bem-vindo',
     'Olá! Sou Guilherme Ferreira, um desenvolvedor em constante aprendizado. Aqui você encontrará meus projetos e experiências.',
     'Minhas redes',
     'Habilidades relevantes'

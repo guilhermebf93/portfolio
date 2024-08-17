@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+# My personal portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This site was made in React using Vite templates. The functionalities include dark theme support and two languages.
 
-Currently, two official plugins are available:
+This website was made to showcase a few of my skills in order to apply to teams in the development field of work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Any feedback would be much appreciated! 
 
-## Expanding the ESLint configuration
+___
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Meu portfólio pessoal
 
-- Configure the top-level `parserOptions` property like this:
+Esse site foi criado em React usando um template Vite. As funcionalisdades incluem suporte ao tema escuro e tradução instantânea para o inglês.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Fiz esse site para mostrar um pouco de minhas habilidades para concorrer a uma vaga na área de desenvolvimento.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Qualquer feedback será bem-vindo!
