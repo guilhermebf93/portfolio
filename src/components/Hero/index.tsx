@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.css';
 import profilePicture from '../../assets/profile.jpeg';
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import { FaHtml5, FaCss3, FaJsSquare, FaReact } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaHtml5, FaCss3, FaJsSquare, FaReact } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import { RiNextjsFill } from 'react-icons/ri';
 
 interface HeroProps {
@@ -48,6 +48,9 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
             </a>
             <a href='https://www.linkedin.com/in/guiferreira93/' target='_blank'>
               <FaLinkedin className='socialLink' />
+            </a>
+            <a href='mailto:guilherme.bf93013@gmail.com' target='_blank'>
+              <MdEmail className='socialLink' />
             </a>
           </div>
         </div>

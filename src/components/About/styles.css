@@ -3,10 +3,6 @@
   padding: 1em;
 }
 
-.about p {
-  font-size: 1.1em;
-}
-
 .about h1 {
   border-bottom: 2px solid var(--border-color);
 }
