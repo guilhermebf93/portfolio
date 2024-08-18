@@ -6,10 +6,10 @@ import { MdEmail } from 'react-icons/md';
 import { RiNextjsFill } from 'react-icons/ri';
 
 interface HeroProps {
-  language: boolean;
+  isEnglish: boolean;
 }
 
-const Hero: React.FC<HeroProps> = ({ language }) => {
+const Hero: React.FC<HeroProps> = ({ isEnglish }) => {
 
   const pt = [
     'Bem-vindo',
@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
       
       <div className='welcome'>
 
-        <h1>{!language ? pt[0] : en[0]}</h1>
+        <h1>{!isEnglish ? pt[0] : en[0]}</h1>
 
         <img src={profilePicture} alt='Profile picture' className='picture' />
 
@@ -37,10 +37,10 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
 
       <div className='heroContent'>
 
-        <p>{!language ? pt[1] : en[1]}</p>
+        <p>{!isEnglish ? pt[1] : en[1]}</p>
 
         <div className='socialLinks'>
-          <h2>{!language ? pt[2] : en[2]}</h2>
+          <h2>{!isEnglish ? pt[2] : en[2]}</h2>
 
           <div className='links'>
             <a href='https://github.com/guilhermebf93' target='_blank'>
@@ -56,7 +56,7 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
         </div>
 
         <div className='relSkills'>
-          <h2>{!language ? pt[3] : en[3]}</h2>
+          <h2>{!isEnglish ? pt[3] : en[3]}</h2>
 
           <div className='skills'>
             <FaHtml5 />
@@ -73,25 +73,3 @@ const Hero: React.FC<HeroProps> = ({ language }) => {
 }
 
 export default Hero;
-
-/*
-    <div className='welcome'>
-        <h1>Bem vindo</h1>
-      </div>
-
-      <div className='landingContent'>
-
-        <div className='texts'>
-          <p>Olá! Meu nome é Guilherme Ferreira, e sou aspirante a desenvolvedor baseado em Santos, Brasil.</p>
-        </div>
-
-        <div className='links'>
-          <a href='https://github.com/guilhermebf93' target='_blank'>
-            <FaGithubSquare className='socialLink' />
-          </a>
-          <a href='https://www.linkedin.com/in/guiferreira93/' target='_blank'>
-            <FaLinkedin className='socialLink' />
-          </a>
-        </div>
-      </div>
-*/

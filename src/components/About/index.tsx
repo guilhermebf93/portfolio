@@ -2,10 +2,10 @@ import React from 'react';
 import './styles.css';
 
 interface AboutProps {
-  language: boolean;
+  isEnglish: boolean;
 }
 
-const About: React.FC<AboutProps> = ({ language }) => {
+const About: React.FC<AboutProps> = ({ isEnglish }) => {
 
   const pt = [
     'Sobre',
@@ -25,15 +25,15 @@ const About: React.FC<AboutProps> = ({ language }) => {
     <div className='about'>
 
       <div className='aboutText'>
-        <h1>{!language ? pt[0] : en[0]}</h1>
+        <h1>{!isEnglish ? pt[0] : en[0]}</h1>
 
         <p>
-          {!language ? pt[1] : en[1]}
+          {!isEnglish ? pt[1] : en[1]}
         </p>
       </div>
 
       <div className='aboutCert'>
-        <h1>{!language ? pt[2] : en[2]}</h1>
+        <h1>{!isEnglish ? pt[2] : en[2]}</h1>
 
         <ul>
           <span className='certTitle'>Responsive Web Design</span><p>freeCodeCamp.</p>

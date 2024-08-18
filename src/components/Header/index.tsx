@@ -9,12 +9,12 @@ import { HandlePage } from '../../App';
 interface HeaderProps {
   changePages: HandlePage;
   changeLanguages: () => void;
-  language: boolean;
+  isEnglish: boolean;
   isDark: boolean;
   changeTheme: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ changePages, changeLanguages, language, isDark, changeTheme }) => {
+const Header: React.FC<HeaderProps> = ({ changePages, changeLanguages, isEnglish, isDark, changeTheme }) => {
 
   const pt = ['Home', 'Projetos', 'Sobre'];
   const en = ['Home', 'Projects', 'About'];
@@ -26,9 +26,9 @@ const Header: React.FC<HeaderProps> = ({ changePages, changeLanguages, language,
         <span className='gui'>Gui</span>Ferreira
       </h1> 
       <div className='options'>
-        <h2 className='option' onClick={() => changePages('hero')}>{!language ? pt[0] : en[0]}</h2>
-        <h2 className='option' onClick={() => changePages('projects')}>{!language ? pt[1] : en[1]}</h2>
-        <h2 className='option' onClick={() => changePages('about')}>{!language ? pt[2] : en[2]}</h2>
+        <h2 className='option' onClick={() => changePages('hero')}>{!isEnglish ? pt[0] : en[0]}</h2>
+        <h2 className='option' onClick={() => changePages('projects')}>{!isEnglish ? pt[1] : en[1]}</h2>
+        <h2 className='option' onClick={() => changePages('about')}>{!isEnglish ? pt[2] : en[2]}</h2>
 
         <div className='switches'>
 

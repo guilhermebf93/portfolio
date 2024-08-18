@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css';
 import api from '../../services/api';
+import ProjectInfo from './components/Project';
 
 interface ReposData {
   name: string;
@@ -9,10 +10,10 @@ interface ReposData {
 };
 
 interface ProjectsProps {
-  language: boolean;
+  isEnglish: boolean;
 }
 
-const Projects: React.FC<ProjectsProps> = ({ language }) => {
+const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
   const [repositorios , setRepositorios] = useState<ReposData[]>([]);
 
   const pt = ['Projetos'];
@@ -39,14 +40,16 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
   
   return(
     <div className='projects'>
-      <h1 className='title'>{!language ? pt[0] : en[0]}</h1>
+      <h1 className='title'>{!isEnglish ? pt[0] : en[0]}</h1>
 
       {repositorios.map((repositorio) => {        
         return(
-          <div key={repositorio.name} className='project'>
-            <a href={repositorio.html_url} target='_blank'>{repositorio.name}</a>
-            <p>{repositorio.description}</p>
-          </div>
+          <ProjectInfo
+            name={repositorio.name}
+            url={repositorio.html_url}
+            description={repositorio.description}
+            isEnglish={isEnglish}
+          />
         )
       })}
 

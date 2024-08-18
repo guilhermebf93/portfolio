@@ -1,0 +1,29 @@
+.project {
+  margin-top: .25em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  padding: .1em 0 .25em;
+}
+
+.projectLinks > a {
+  text-decoration: none;
+  color: var(--letter-color);
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.projectLinks > a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .project > p {
+    width: 60%;
+  }
+}

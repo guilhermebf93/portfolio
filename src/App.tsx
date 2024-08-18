@@ -43,14 +43,14 @@ function App() {
 
   return (
     <div className='page'>
-      <Header changePages={handlePages} changeLanguages={handleLanguage} language={isEnglish} isDark={isDark} changeTheme={handleTheme} />
+      <Header changePages={handlePages} changeLanguages={handleLanguage} isEnglish={isEnglish} isDark={isDark} changeTheme={handleTheme} />
       
       {page === 'hero' ? (
-        <Hero language={isEnglish} />
+        <Hero isEnglish={isEnglish} />
       ) : page === 'projects' ? (
-        <Projects language={isEnglish} /> 
+        <Projects isEnglish={isEnglish} /> 
       ) : (
-        <About language={isEnglish} />
+        <About isEnglish={isEnglish} />
         )
       }
     </div>
