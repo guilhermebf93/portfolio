@@ -19,6 +19,10 @@ const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
   const pt = ['Projetos'];
   const en = ['Projects'];
 
+  const reposToIgnore = [
+    'scm'
+  ]
+
   useEffect(() => {
     async function getRepos() {
       try {
@@ -42,15 +46,17 @@ const Projects: React.FC<ProjectsProps> = ({ isEnglish }) => {
     <div className='projects'>
       <h1 className='title'>{!isEnglish ? pt[0] : en[0]}</h1>
 
-      {repositorios.map((repositorio) => {        
-        return(
-          <ProjectInfo
-            name={repositorio.name}
-            url={repositorio.html_url}
-            description={repositorio.description}
-            isEnglish={isEnglish}
-          />
-        )
+      {repositorios.map((repositorio) => {    
+        if (!reposToIgnore.includes(repositorio.name)) {    
+            return(
+            <ProjectInfo
+                name={repositorio.name}
+                url={repositorio.html_url}
+                description={repositorio.description}
+                isEnglish={isEnglish}
+            />
+            )
+        }
       })}
 
     </div>
