@@ -4,6 +4,7 @@ import profilePicture from '../../assets/profile.jpeg';
 import { FaGithubSquare, FaLinkedin, FaHtml5, FaCss3, FaJsSquare, FaReact } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiNextjsFill } from 'react-icons/ri';
+import { BiLogoPostgresql } from "react-icons/bi";
 
 interface HeroProps {
   isEnglish: boolean;
@@ -64,6 +65,7 @@ const Hero: React.FC<HeroProps> = ({ isEnglish }) => {
             <FaJsSquare />
             <FaReact />
             <RiNextjsFill />
+            <BiLogoPostgresql />
           </div>
         </div>
 
