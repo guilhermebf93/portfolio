@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles.css';
 import profilePicture from '../../assets/profile.jpeg';
-import { FaGithubSquare, FaLinkedin, FaHtml5, FaCss3, FaJsSquare, FaReact } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaHtml5, FaCss3, FaReact } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { RiNextjsFill } from 'react-icons/ri';
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 interface HeroProps {
   isEnglish: boolean;
@@ -62,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ isEnglish }) => {
           <div className='skills'>
             <FaHtml5 />
             <FaCss3 />
-            <FaJsSquare />
+            <BiLogoTypescript />
             <FaReact />
             <RiNextjsFill />
             <BiLogoPostgresql />

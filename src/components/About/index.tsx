@@ -47,6 +47,9 @@ const About: React.FC<AboutProps> = ({ isEnglish }) => {
         <ul>
           <span className='certTitle'>SQL and PostgreSQL: The Complete Developer's Guide</span><p>Udemy</p>
         </ul>
+        <ul>
+          <span className='certTitle'>Understanding TypeScript</span><p>Udemy</p>
+        </ul>
       </div>
     </div>
   )
